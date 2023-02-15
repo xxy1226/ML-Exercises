@@ -40,13 +40,13 @@ if __name__ == '__main__':
     app = HelloApp(root)
     
     # 图片（+文字）    
-    cadog = PhotoImage(file='C:/Users/xxia/source/repos/ML-Exercises/PlayGround/DALLE1.png')
-    logo = PhotoImage(file='C:/Users/xxia/source/repos/ML-Exercises/PlayGround/python_logo.gif')
-    small_logo = logo.subsample(5, 5)
+    # cadog = PhotoImage(file='DALLE1.png')
+    # logo = PhotoImage(file='python_logo.gif')
+    # small_logo = logo.subsample(5, 5)
     
     img = ttk.Label(root, text='cadog')
     # img.grid(row=3, column=0, columnspan=2)
-    img.config(image=logo)
+    # img.config(image=logo)
     img.config(compound='text')
     img.config(compound='center')
     img.config(compound='left')
@@ -57,14 +57,14 @@ if __name__ == '__main__':
     def btn1callback():
         print('Clicked!')
     btn1.config(command=btn1callback)
-    btn1.config(image=small_logo, compound=LEFT)
+    # btn1.config(image=small_logo, compound=LEFT)
     btn1.invoke()
     
     # 灰按钮
     btn2 = ttk.Button(root, text='Click Me')
     btn2.grid(row=4, column=2)
     btn2.config(command=btn1callback)
-    btn2.config(image=small_logo, compound=LEFT)
+    # btn2.config(image=small_logo, compound=LEFT)
     btn2.state(['disabled'])
     
     # 勾选按钮
